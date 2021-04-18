@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/saharinternational/static/css/main.7eb7408e.chunk.css",
+    "main.js": "/saharinternational/static/js/main.d46eeaae.chunk.js",
+    "main.js.map": "/saharinternational/static/js/main.d46eeaae.chunk.js.map",
+    "runtime-main.js": "/saharinternational/static/js/runtime-main.c706087d.js",
+    "runtime-main.js.map": "/saharinternational/static/js/runtime-main.c706087d.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/saharinternational/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.ecff3c9e.chunk.js": "/saharinternational/static/js/2.ecff3c9e.chunk.js",
+    "static/js/2.ecff3c9e.chunk.js.map": "/saharinternational/static/js/2.ecff3c9e.chunk.js.map",
+    "index.html": "/saharinternational/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/saharinternational/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.7eb7408e.chunk.css.map": "/saharinternational/static/css/main.7eb7408e.chunk.css.map",
+    "static/js/2.ecff3c9e.chunk.js.LICENSE.txt": "/saharinternational/static/js/2.ecff3c9e.chunk.js.LICENSE.txt",
+    "static/media/pak.69c2b172.png": "/saharinternational/static/media/pak.69c2b172.png",
+    "static/media/palmtree3.0706cb8e.png": "/saharinternational/static/media/palmtree3.0706cb8e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c706087d.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.ecff3c9e.chunk.js",
+    "static/css/main.7eb7408e.chunk.css",
+    "static/js/main.d46eeaae.chunk.js"
+  ]
+}
