@@ -5,7 +5,7 @@ const cors = require("cors");
 const https = require('https');
 const fs = require('fs');
 const path = require("path");
-// var http = require('http');
+
 const directory = "client";
 
 const db = mysql.createPool({
@@ -22,7 +22,7 @@ app.use(express.json());
 // https.use(cors());
 // https.use(express.json());
 
-
+const hostname = '192.168.0.4';
 
 const httpsoptions = {
     key: fs.readFileSync('key.pem'),
@@ -31,7 +31,7 @@ const httpsoptions = {
 
 
 https.createServer(httpsoptions, app).listen(3001);
-// var httpServer = http.createServer(app);
+
 // const sslServer = https.createServer(options, app);
 
 // httpServer.listen(3002);
@@ -39,10 +39,10 @@ https.createServer(httpsoptions, app).listen(3001);
 //     console.log("Listening on port 3001");
 // });
 
-app.use("/", (req, res) => {
-    res.send("Hello Worldasdfsadfsa");
+// app.use("/", (req, res) => {
+//     res.send("Hello Worldasdfsadfsa");
 
-})
+// })
 
 
 // const sslServer = https.createServer(credentials, app);
