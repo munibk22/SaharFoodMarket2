@@ -2,35 +2,57 @@ const mysql = require("mysql2");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const https = require('https');
+// const https = require('https');
 const fs = require('fs');
-const path = require("path");
+// const path = require("path");
+const http = require("http");
 
-const directory = "client";
+
+
+// const db = mysql.createPool({
+//     host: "localhost",
+//     user: "root",
+//     password: "4241",
+//     port: "3310",
+//     database: "store_items"
+
+// })
 
 const db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "4241",
-    port: "3310",
-    database: "store_items"
+    host: "us-cdbr-east-03.cleardb.com",
+    user: "ba379389915501",
+    password: "240b1535",
+    database: "heroku_ec968024121263d"
 
 })
 
+
+
 app.use(cors());
 app.use(express.json());
+
+const server = http.Server(app);
 // https.use(cors());
 // https.use(express.json());
 
-const hostname = '192.168.0.4';
-
-const httpsoptions = {
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem')
-};
+// const hostname = '192.168.0.4';
+const port = process.env.PORT || 3001;
 
 
-https.createServer(httpsoptions, app).listen(3001);
+server.listen(port, () => {
+    console.log(`Server running on port :${port}`);
+
+})
+
+// const httpsoptions = {
+//     key: fs.readFileSync("server.key"),
+//     cert: fs.readFileSync("server.crt")
+// };
+
+
+// https.createServer(httpsoptions, app).listen(port, (res, req) => {
+//     console.log("server");
+// });
 
 // const sslServer = https.createServer(options, app);
 
@@ -46,6 +68,7 @@ https.createServer(httpsoptions, app).listen(3001);
 
 
 // const sslServer = https.createServer(credentials, app);
+
 
 
 app.post("/postgrocery", (req, res) => {
